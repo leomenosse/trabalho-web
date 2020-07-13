@@ -1,0 +1,253 @@
+#container {
+    display: grid;
+    grid-template-rows: 50px 1fr 40px;
+    grid-template-columns: 230px 1fr;
+    grid-template-areas: "header header" "aside section" "footer footer";
+    width: 100vw;
+    height: 100vh;
+}
+
+#cabecalho {
+    grid-area: header;
+    background-color: #507DBC;
+    text-align: center;
+    padding: 1px;
+    border-bottom: 5px solid black;
+}
+
+#menu {
+    grid-area: aside;
+    background-color: #A1C6EA;
+    padding: 30px;
+    border-right: 5px solid black;
+}
+
+#conteudo {
+    grid-area: section;
+    background-color: #BBD1EA;
+    padding: 47px;
+}
+
+#rodape {
+    grid-area: footer;
+    background-color: #507DBC;
+    text-align: center;
+    padding: 5px;
+    border-top: 5px solid black;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#categorias {
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-areas: "drama comedia terror" "acao animacao musical";
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-top: 40px;
+}
+
+#drama {
+    grid-area: drama;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 5px;
+    position: relative;
+}
+
+#drama::before {
+    content: "";
+    background-image: url(img/drama.jpg);
+    background-size: cover;
+    filter: blur(1.5px);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#comedia {
+    grid-area: comedia;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 5px;
+    position: relative;
+}
+
+#comedia::before {
+    content: "";
+    background-image: url(img/comedia.jpg);
+    background-size: cover;
+    filter: blur(1.5px);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#terror {
+    grid-area: terror;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 5px;
+    position: relative;
+}
+
+#terror::before {
+    content: "";
+    background-image: url(img/terror.png);
+    background-size: cover;
+    filter: blur(1.5px);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#acao {
+    grid-area: acao;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 5px;
+    position: relative;
+}
+
+#acao::before {
+    content: "";
+    background-image: url(img/acao.png);
+    background-size: cover;
+    filter: blur(1.5px);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#animacao {
+    grid-area: animacao;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 5px;
+    position: relative;
+}
+
+#animacao::before {
+    content: "";
+    background-image: url(img/animacao.jpg);
+    background-size: cover;
+    filter: blur(1.5px);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#musical {
+    grid-area: musical;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 5px;
+    position: relative;
+}
+
+#musical::before {
+    content: "";
+    background-image: url(img/musical.jpg);
+    background-size: cover;
+    filter: blur(1.5px);
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+#drama:hover,
+#comedia:hover,
+#terror:hover,
+#acao:hover,
+#animacao:hover,
+#musical:hover {
+    cursor: pointer;
+    border-color: yellow;
+    border-radius: 10px;
+}
+
+#divConteudo {
+    width: 250px;
+    height: 32px;
+    border-bottom: 5px solid black;
+}
+
+.tituloCategorias {
+    color: white;
+    font-family: proxima-soft, sans-serif;
+    font-weight: 600;
+    text-shadow: 1px -1px black, -1px 1px black, 1px 1px black, -1px -1px black;
+    text-align: center;
+    padding: 51px;
+    position: relative;
+}
+
+.tituloCategorias:hover {
+    color: yellow;
+}
+
+#container>#conteudo>#categorias>#terror>.ancora>.tituloCategorias {
+    padding: 42px;
+}
+
+#tituloMenu {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#listaMenu {
+    width: 140px;
+    margin-left: 20px;
+}
+
+.itemLista {
+    margin-bottom: 40px;
+    font-weight: bold;
+    list-style-image: url("https://img.icons8.com/metro/26/000000/film-reel.png");
+}
+
+.ancora {
+    color: black;
+    text-decoration: none;
+}
+
+.ancora:hover {
+    cursor: pointer;
+    color: yellow;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    #container {
+        grid-template-columns: 170px 1fr;
+    }
+    #listaMenu {
+        margin-left: 10px;
+    }
+    #categorias {
+        grid-template-rows: 150px 150px 150px 150px 150px 150px;
+        grid-template-columns: 250px;
+        grid-template-areas: "drama" "comedia" "terror" "acao" "animacao" "musical";
+        column-gap: 0px;
+    }
+    #conteudo {
+        padding: 33px;
+    }
+}

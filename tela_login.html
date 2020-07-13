@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tela Login/Out</title>
+    <link rel="stylesheet" href="tela_login.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="sortcut icon" href="https://img.icons8.com/officexs/16/000000/cinema-.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="container">
+        <header id="cabecalho">
+            <h1>TB01</h1>
+        </header>
+
+        <aside id="menu">
+            <h1 id="tituloMenu">Seções</h1>
+            <ul id="listaMenu">
+                <li class="itemLista"><a class="ancora" href="tela_inicial.html">Categorias</a></li>
+                <li class="itemLista"><a class="ancora" href="tela_maisAssistidos.html">Mais Assistidos</a></li>
+                <li class="itemLista"><a class="ancora" href="tela_bemAvaliados.html">Mais Bem Avaliados</a></li>
+                <li class="itemLista"><a class="ancora" href="tela_login.html">Login/Out</a></li>
+            </ul>
+        </aside>
+
+        <section id="conteudo">
+            <div id="flexConteudo">
+                <div id="login">
+                    <div id="divLogin">
+                        <h1>Login</h1>
+                    </div>
+
+                    <form id="loginForm">
+                        <label class="itemForm">E-mail:</label>
+                        <br/>
+                        <input type="email" placeholder="E-mail" name="loginEmail" class="inputForm" />
+                        <br/>
+                        <br/>
+                        <label class="itemForm">Senha:</label>
+                        <br/>
+                        <input type="password" placeholder="Senha" name="loginSenha" class="inputForm" />
+                        <br/>
+                        <br/>
+                        <button type="submit" name="loginBotao" id="loginBotao">Entrar</button>
+                    </form>
+
+                    <div id="divLogout">
+                        <h1>Logout</h1>
+                    </div>
+
+                    <button type="submit" name="logoutBotao" id="logoutBotao">Sair</button>
+                </div>
+
+                <div id="cadastro">
+                    <div id="divCadastro">
+                        <h1>Cadastro</h1>
+                    </div>
+
+                    <form id="cadastroForm">
+                        <label class="itemForm">Nome:</label>
+                        <br />
+                        <input type="text" placeholder="Nome" name="nome" class="inputForm" />
+                        <br />
+                        <br />
+                        <label class="itemForm">Sobrenome:</label>
+                        <br />
+                        <input type="text" placeholder="Sobrenome" name="sobrenome" class="inputForm" />
+                        <br/>
+                        <br />
+                        <label class="itemForm">E-mail:</label>
+                        <br />
+                        <input type="email" placeholder="E-mail" name="cadastroEmail" class="inputForm" />
+                        <br />
+                        <br />
+                        <label class="itemForm">Senha:</label>
+                        <br />
+                        <input type="password" placeholder="Senha" name="cadastroSenha" class="inputForm" />
+                        <br />
+                        <br />
+                        <button type="submit" name="cadastroBotao" id="cadastroBotao">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer id="rodape">
+            <h3><a id="tituloFooter" class="ancora" href="https://icons8.com.br/icons/set/movies" target="_blank">Filme icon by Icons8</a></h3>
+        </footer>
+    </div>
+</body>
+
+</html>

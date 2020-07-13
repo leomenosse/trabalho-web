@@ -1,0 +1,148 @@
+#container {
+    display: grid;
+    grid-template-rows: 50px 1fr 40px;
+    grid-template-columns: 230px 1fr;
+    grid-template-areas: "header header" "aside section" "footer footer";
+    width: 100vw;
+    height: 100vh;
+}
+
+#cabecalho {
+    grid-area: header;
+    background-color: #507DBC;
+    text-align: center;
+    padding: 1px;
+    border-bottom: 5px solid black;
+}
+
+#menu {
+    grid-area: aside;
+    background-color: #A1C6EA;
+    padding: 30px;
+    border-right: 5px solid black;
+}
+
+#conteudo {
+    grid-area: section;
+    background-color: #BBD1EA;
+    padding: 47px;
+}
+
+#rodape {
+    grid-area: footer;
+    background-color: #507DBC;
+    text-align: center;
+    padding: 5px;
+    border-top: 5px solid black;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#divConteudo {
+    width: 355px;
+    height: 29px;
+    border-bottom: 5px solid black;
+}
+
+#tituloMenu {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#listaMenu {
+    width: 140px;
+    margin-left: 20px;
+}
+
+.itemLista {
+    margin-bottom: 40px;
+    font-weight: bold;
+    list-style-image: url("https://img.icons8.com/metro/26/000000/film-reel.png");
+}
+
+.ancora {
+    color: black;
+    text-decoration: none;
+}
+
+.ancora:hover {
+    cursor: pointer;
+    color: yellow;
+    text-decoration: underline;
+}
+
+#filmes {
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-areas: ". . . ." ". . . .";
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-top: 40px;
+}
+
+.divFilmes {
+    background-color: black;
+    border: 5px solid black;
+}
+
+.divFilmes:hover {
+    cursor: pointer;
+    border-color: yellow;
+}
+
+.colocacao {
+    background-color: #507DBC;
+    text-align: center;
+    padding: 5px;
+    width: 45px;
+    margin-left: 67.5px;
+    border-radius: 15px;
+    border-style: dotted;
+    color: yellow;
+}
+
+.colocacao:hover {
+    background-color: yellow;
+    color: #507DBC;
+}
+
+figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    /*para que possa caber na borda*/
+    box-sizing: border-box;
+    /*efeito de transição*/
+    transition: opacity 0.75s;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+figure>img {
+    width: 100%;
+    height: 100%;
+}
+
+figure>figcaption>h3,
+figure>figcaption>p {
+    font-size: 10pt;
+    text-align: center;
+}

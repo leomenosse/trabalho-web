@@ -1,0 +1,223 @@
+@media screen and (max-width: 900px) {
+    #container {
+        grid-template-columns: 170px 1fr;
+    }
+    #listaMenu {
+        margin-left: 10px;
+    }
+    #filmes {
+        grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px;
+        grid-template-columns: 200px;
+        grid-template-areas: "." "." "." "." "." "." "." ".";
+        column-gap: 0px;
+    }
+    #conteudo {
+        padding: 50px;
+    }
+    #divConteudo {
+        width: 225px;
+    }
+}
+
+
+/** ============== FILMES ============== **/
+
+.divFilmes>figure>figcaption>h3,
+.divFilmes>figure>figcaption>p {
+    margin-top: 10px;
+}
+
+
+/** ============== TERROR ============== **/
+
+#segredoDaCabana>figure>figcaption>h3 {
+    margin-top: 5px;
+}
+
+#hereditario>figure>figcaption>p {
+    margin-top: 5px;
+}
+
+#psicose>figure>figcaption>h3,
+#psicose>figure>figcaption>p {
+    margin-top: 20px;
+}
+
+
+/** ============== MUSICAL ============== **/
+
+#laLaLaLand>figure>figcaption>h3 {
+    margin-top: 0px;
+}
+
+#laLaLaLand>figure>figcaption>p,
+#cantandoNaChuva>figure>figcaption>h3 {
+    margin-top: 5px;
+}
+
+#reiDoShow>figure>figcaption>h3,
+#reiDoShow>figure>figcaption>p {
+    margin-top: 15px;
+}
+
+#annaAndTheApocalypse>figure>figcaption>p,
+#lesMiserables>figure>figcaption>p,
+#caminhosDaFloresta>figure>figcaption>p {
+    margin-top: 25px;
+}
+
+#annaAndTheApocalypse>figure>figcaption>h3 {
+    margin-top: 35px;
+}
+
+#lesMiserables>figure>figcaption>h3 {
+    margin-top: 55px;
+}
+
+#caminhosDaFloresta>figure>figcaption>h3 {
+    margin-top: 45px;
+}
+
+#hsm>figure>figcaption>h3,
+#hsm>figure>figcaption>p {
+    margin-top: 20px;
+}
+
+
+/** ============== DRAMA ============== **/
+
+#moonlight>figure>figcaption>h3 {
+    margin-top: 5px;
+}
+
+#comAmorSimor>figure>figcaption>h3 {
+    margin-top: 0px;
+}
+
+#comAmorSimor>figure>figcaption>p {
+    margin-top: 6px;
+}
+
+#adoraveisMulheres>figure>figcaption>h3,
+#coringa>figure>figcaption>h3 {
+    margin-top: 40px;
+}
+
+#adoraveisMulheres>figure>figcaption>p,
+#halfOfIt>figure>figcaption>h3,
+#coringa>figure>figcaption>p {
+    margin-top: 20px;
+}
+
+#vantagens>figure>figcaption>h3,
+#halfOfIt>figure>figcaption>p,
+#formaAgua>figure>figcaption>h3,
+#formaAgua>figure>figcaption>p {
+    margin-top: 15px;
+}
+
+
+/** ============== COMÉDIA ============== **/
+
+#jojo>figure>figcaption>h3,
+#foraDeSerie>figure>figcaption>h3 {
+    margin-top: 15px;
+}
+
+#jojo>figure>figcaption>p,
+#simplesmenteAcontece>figure>figcaption>h3,
+#simplesmenteAcontece>figure>figcaption>p,
+#hunt>figure>figcaption>p,
+#vizinhos>figure>figcaption>h3,
+#vizinhos>figure>figcaption>p {
+    margin-top: 20px;
+}
+
+#fundamentals>figure>figcaption>h3 {
+    margin-top: 40px;
+}
+
+#fundamentals>figure>figcaption>p,
+#hunt>figure>figcaption>h3 {
+    margin-top: 25px;
+}
+
+#misterioMediterraneo>figure>figcaption>h3,
+#osEstagiarios>figure>figcaption>h3 {
+    margin-top: 5px;
+}
+
+#misterioMediterraneo>figure>figcaption>p {
+    margin-top: 5px;
+}
+
+
+/** ============== ANIMAÇÃO ============== **/
+
+#linkPerdido>figure>figcaption>h3 {
+    margin-top: 5px;
+}
+
+#zootopia>figure>figcaption>p,
+#coraline>figure>figcaption>p {
+    margin-top: 5px;
+}
+
+#zootopia>figure>figcaption>h3,
+#coraline>figure>figcaption>h3 {
+    margin-top: 0px;
+}
+
+#divertidamente>figure>figcaption>h3,
+#aranhaverso>figure>figcaption>h3 {
+    margin-top: 30px;
+}
+
+#divertidamente>figure>figcaption>p,
+#aranhaverso>figure>figcaption>p {
+    margin-top: 20px;
+}
+
+#doisIrmaos>figure>figcaption>h3 {
+    margin-top: 25px;
+}
+
+#doisIrmaos>figure>figcaption>p,
+#toyStory4>figure>figcaption>p {
+    margin-top: 15px;
+}
+
+#toyStory4>figure>figcaption>h3 {
+    margin-top: 20px;
+}
+
+
+/** ============== AÇÃO ============== **/
+
+#jogadorN1>figure>figcaption>h3,
+#birdsOfPrey>figure>figcaption>h3,
+#jumanji2>figure>figcaption>h3 {
+    margin-top: 5px;
+}
+
+#endgame>figure>figcaption>h3 {
+    margin-top: 40px;
+}
+
+#endgame>figure>figcaption>p,
+#transformers5>figure>figcaption>h3,
+#expresso>figure>figcaption>p,
+#sonic>figure>figcaption>h3 {
+    margin-top: 20px;
+}
+
+#mazeRunner3>figure>figcaption>h3,
+#expresso>figure>figcaption>h3 {
+    margin-top: 25px;
+}
+
+#mazeRunner3>figure>figcaption>p,
+#transformers5>figure>figcaption>p,
+#sonic>figure>figcaption>p {
+    margin-top: 15px;
+}

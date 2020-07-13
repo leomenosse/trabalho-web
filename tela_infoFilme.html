@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tela_infoFilme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id="pagina">
+
+        <header id="cabecalho">
+            <h1>TB01</h1>
+        </header>
+
+        <aside id="menu">
+            <h1 id="tituloMenu">Seções</h1>
+            <ul id="listaMenu">
+                <li class="itemLista"><a class="ancora" href="tela_inicial.html">Categorias</a></li>
+                <li class="itemLista"><a class="ancora" href="tela_maisAssistidos.html">Mais Assistidos</a></li>
+                <li class="itemLista"><a class="ancora" href="tela_bemAvaliados.html">Mais Bem Avaliados</a></li>
+                <li class="itemLista"><a class="ancora" href="tela_login.html">Login/Out</a></li>
+            </ul>
+        </aside>
+
+        <div id="container">
+
+            <div class="movieContainer">
+                
+                <div id="titulo">
+                    <div id="heading">Vingadores Guerra Infinita</div>
+                </div>
+
+                <div id="leftPanel">
+                    <div id="foto">
+                        <img src="categorias/img/acao/endgame.jpg">
+                    </div>
+                    <div id="fichaTecnica">
+                        <div id="heading">Ficha técnica</div><hr>
+                        <span id="ft"><b>Nome do filme: </b>Vingadores Guerra Infinita</span><br>
+                        <span id="ft"><b>Gênero: </b>Aventura, Ação, Fantasia</span><br>
+                        <span id="ft"><b>Duração: </b>2h 36min</span><br>
+                        <span id="ft"><b>Lançamento: </b>26 de abril de 2018</span><br>
+                        <span id="ft"><b>Direção: </b>Joe Russo, Anthony Russo</span>
+                    </div>
+                </div>
+
+                <div id="rightPanel">
+                    <div id="descricao">
+                        <span id="heading">Sinopse e detalhes</span>
+                        <p>Em Vingadores: Guerra Infinita, Thanos (Josh Brolin) enfim chega à Terra, disposto a reunir as Joias do Infinito. Para
+                        enfrentá-lo, os Vingadores precisam unir forças com os Guardiões da Galáxia, ao mesmo tempo em que lidam com desavenças
+                        entre alguns de seus integrantes.</p>
+                        <p>Elenco: Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans, Scarlett Johansson, Benedict Cumberbatch,
+                        Don Cheadle, Tom Holland, Chadwick Boseman, Paul Bettany, Elizabeth Olsen, Anthony Mackie, Sebastian Stan, Pom
+                        Klementieff, Danai Gurira, Dave Bautista, Zoe Saldana, Josh Brolin e Chris Pratt. </p>                
+                        <p>Em Avengers: Infinity War, os
+                        Vingadores unem forças com os Guardiões da Galáxia para enfrentar Thanos, que almeja juntar as Joias do Infinito.</p>
+                    </div>
+                    <div id="avaliacao">
+                        <span id="heading">Nota dos usuários:</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-half checked"></span>
+                        <p>4.0 baseado em 20 reviews</p>
+
+                        <div class="grafico">
+                            <div class="side">
+                                <div>5 estrelas</div>
+                            </div>
+                            <div class="middle">
+                                <div class="bar-container">
+                                <div class="bar-5"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                                <div>150</div>
+                            </div>
+                            <div class="side">
+                                <div>4 estrelas</div>
+                            </div>
+                            <div class="middle">
+                                <div class="bar-container">
+                                <div class="bar-4"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                                <div>63</div>
+                            </div>
+                            <div class="side">
+                                <div>3 estrelas</div>
+                            </div>
+                            <div class="middle">
+                                <div class="bar-container">
+                                <div class="bar-3"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                                <div>15</div>
+                            </div>
+                            <div class="side">
+                                <div>2 estrelas</div>
+                            </div>
+                            <div class="middle">
+                                <div class="bar-container">
+                                <div class="bar-2"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                                <div>6</div>
+                            </div>
+                            <div class="side">
+                                <div>1 estrelas</div>
+                            </div>
+                            <div class="middle">
+                                <div class="bar-container">
+                                <div class="bar-1"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                                <div>20</div>
+                            </div>
+                        </div>
+
+                        <div class="avaliacaoUsuario">
+                            <form id="formAvaliacao">
+                                <span id="heading">Dê uma nota e escreva um comentário sobre o filme<br></span>
+
+                                <input type="radio" id="oneStar" name="rating" value="one">
+                                <label for="one"><span class="fa fa-star checked"></span></label>
+
+                                <input type="radio" id="twoStars" name="rating" value="two">
+                                <label for="two">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </label>
+
+                                <input type="radio" id="threeStars" name="rating" value="three">
+                                <label for="three">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </label>
+
+                                <input type="radio" id="fourStars" name="rating" value="four">
+                                <label for="four">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </label>
+
+                                <input type="radio" id="fiveStars" name="rating" value="five">
+                                <label for="five">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </label><br>
+
+                                
+
+                                <textarea rows="3" name="comentario" form="formAvaliacao" ></textarea><br>
+
+                                <input type="button" value="Enviar avaliação">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="reviewsContainer">
+                <h2>Análises dos usuários</h2>
+                <div class="review">
+                    <div id="rightLeft">
+                        <div id="left" class="reviewNomeUsuario">
+                            Charlie Brown
+                        </div>
+                        <div id="right" class="reviewAvaliacaoUsuario">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>   
+                    </div> 
+                    <p>Filme top.</p>
+                </div>
+
+                <div class="review">
+                    <div id="rightLeft">
+                        <div id="left" class="reviewNomeUsuario">
+                            Lelous
+                        </div>
+                        <div id="right" class="reviewAvaliacaoUsuario">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>   
+                    </div> 
+                    <p>Odiei com todas as minhas forças.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer id="rodape">
+            <h3><a id="tituloFooter" class="ancora" href="https://icons8.com.br/icons/set/movies" target="_blank">Filme icon by
+                    Icons8</a></h3>
+        </footer>
+    </div>
+</body>
+
+</html>
