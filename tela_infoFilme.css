@@ -25,6 +25,8 @@ body {
 #cabecalho {
     grid-area: header;
     background-color: #507DBC;
+    color: white;
+    font-size: 2vw;
     text-align: center;
     padding: 1px;
 }
@@ -288,11 +290,11 @@ hr {
   color: white;
 }
 
-.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
-.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
-.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
-.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
-.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+.bar-5 {width: 20%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 20%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 30%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 10%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 20%; height: 18px; background-color: #f44336;}
 
 .avaliacaoUsuario {
     margin-top: 20px;
@@ -347,6 +349,7 @@ textarea {
         align-items: center;
     }
     #navbar > a{
+        padding: 1vh 0;
         width: 100%;
         text-align: center;
         font-size: 3.2vw;
