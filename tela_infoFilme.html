@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vingadores: Guerra Infinita</title>
+    <link rel="sortcut icon" href="https://img.icons8.com/officexs/16/000000/cinema-.png" type="image/x-icon" />
     <link rel="stylesheet" href="tela_infoFilme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -16,15 +17,13 @@
             <h1>TB01</h1>
         </header>
 
-        <aside id="menu">
-            <h1 id="tituloMenu">Seções</h1>
-            <ul id="listaMenu">
-                <li class="itemLista"><a class="ancora" href="tela_inicial.html">Categorias</a></li>
-                <li class="itemLista"><a class="ancora" href="tela_maisAssistidos.html">Mais Assistidos</a></li>
-                <li class="itemLista"><a class="ancora" href="tela_bemAvaliados.html">Mais Bem Avaliados</a></li>
-                <li class="itemLista"><a class="ancora" href="tela_login.html">Login/Out</a></li>
-            </ul>
-        </aside>
+        <div id="navbar">
+            <a href="tela_inicial.html">Home</a>
+            <a href="tela_maisAssistidos.html">Mais assistidos</a>
+            <a href="tela_bemAvaliados.html">Melhores avaliados</a>
+            <a href="tela_favoritos.html">Meus favoritos</a>
+            <a href="tela_login.html">Login</a>
+        </div>
 
         <div id="container">
 
@@ -62,16 +61,18 @@
                     </div>
                     <div id="avaliacao">
                         <span id="heading">Nota dos usuários:</span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star-half checked"></span>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star-half checked"></span>
+                        </div>
                         <p>4.0 baseado em 20 reviews</p>
 
                         <div class="grafico">
                             <div class="side">
-                                <div>5 estrelas</div>
+                                <div>5 <span class="fa fa-star checked"></span></div>
                             </div>
                             <div class="middle">
                                 <div class="bar-container">
@@ -82,7 +83,7 @@
                                 <div>150</div>
                             </div>
                             <div class="side">
-                                <div>4 estrelas</div>
+                                <div>4 <span class="fa fa-star checked"></span></div>
                             </div>
                             <div class="middle">
                                 <div class="bar-container">
@@ -93,7 +94,7 @@
                                 <div>63</div>
                             </div>
                             <div class="side">
-                                <div>3 estrelas</div>
+                                <div>3 <span class="fa fa-star checked"></span></div>
                             </div>
                             <div class="middle">
                                 <div class="bar-container">
@@ -104,7 +105,7 @@
                                 <div>15</div>
                             </div>
                             <div class="side">
-                                <div>2 estrelas</div>
+                                <div>2 <span class="fa fa-star checked"></span></div>
                             </div>
                             <div class="middle">
                                 <div class="bar-container">
@@ -115,7 +116,7 @@
                                 <div>6</div>
                             </div>
                             <div class="side">
-                                <div>1 estrelas</div>
+                                <div>1 <span class="fa fa-star checked"></span></div>
                             </div>
                             <div class="middle">
                                 <div class="bar-container">
@@ -177,7 +178,7 @@
             </div>
 
             <div class="reviewsContainer">
-                <h2>Análises dos usuários</h2>
+                <div id="heading">Análises dos usuários</div>
                 <div class="review">
                     <div id="rightLeft">
                         <div id="left" class="reviewNomeUsuario">
@@ -207,14 +208,14 @@
                             <span class="fa fa-star checked"></span>
                         </div>   
                     </div> 
-                    <p>Odiei com todas as minhas forças.</p>
+                    <p>Odiei com todas as minhas forças ffgdfsdsgdgbdfg daedfsgsfdaewfsgdgsdae wdfsamas tá de parabens ae o fera.</p>
                 </div>
             </div>
 
         </div>
 
         <footer id="rodape">
-            <h3><a id="tituloFooter" class="ancora" href="https://icons8.com.br/icons/set/movies" target="_blank">Filme icon by
+            <h3><a id="tituloFooter" href="https://icons8.com.br/icons/set/movies" target="_blank">Filme icon by
                     Icons8</a></h3>
         </footer>
     </div>
